@@ -17,7 +17,7 @@
     <label for="valor">Valor</label><br>
     <input type="text" [(ngModel)]="valor" name="valor" id="valor"><br><br>
 
-    <input type="button" (click)="gerarRecibo()" value="Visualizar Recibo">
+    <input type="button" (click)="mostrarRecibo()" value="Visualizar Recibo">
 
   </fieldset>
 </form>
@@ -32,8 +32,7 @@
 
   <p>Cliente............................: {{ cliente }}</p>
   <p>Produto...........................: {{ produto }}</p>
-  <p>Quantidade.....................: {{ quantidade }}</p>
-  <p>Quantidade.....................: {{ quantidade }}</p>
+  <p>Quantidade.....................: {{ quantidade }}x - R$ {{ valorTotal() }}</p>
   <hr>
   <p>Valor Total(R$)..............: {{ valorTotal() }}</p>
 </fieldset>

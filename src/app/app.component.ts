@@ -25,7 +25,7 @@ export class AppComponent {
     this.quantidade--;
   }
 
-  gerarRecibo():boolean{
+  mostrarRecibo():boolean{
     return this.recibo = true;
   }
 }
